@@ -11,7 +11,7 @@
     - app1comp1
 
 - name: Copy app1comp2 to Win2012 Server  
-  hosts: win2012
+  hosts: Win2012
   tasks:
     
   roles:
