@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 ---
 - name: app1 playbook
   hosts: '{{ target }}'
   roles:
     - { role: app1comp1 }
     - { role: app2comp2 }
+=======
+---
+- name: app1 playbook
+  hosts: '{{ target }}'
+  roles:
+    - { role: app1comp1 }
+    - { role: app2comp2 }
+>>>>>>> origin/master
