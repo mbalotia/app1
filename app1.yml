@@ -1,7 +1,19 @@
 ---
 - name: app1 playbook
   hosts: all
+  tasks:
+  
+- name: Copy app1comp1 to all the servers  
+  hosts: all
+  tasks:
+  
   roles:
-    - { role: app1comp1 }
-    - { role: app1comp2 }
+    - app1comp1
+
+- name: Copy app1comp2 to Win2012 Server  
+  hosts: win2012
+  tasks:
+    
+  roles:
+    - app1comp2
 
