@@ -2,5 +2,10 @@
 # This uses the win_copy to copy role files to specified destination in Windows Server
 - name: Copy app1comp1.txt to windows machine
   win_copy:
-    src: app1comp1.txt
-    dest: c:\Temp\app1comp1.txt
+    src:{{ item.src }}
+    dest:{{ item.dest }}
+    src: 
+    dest: 
+  with_items:
+    - { src: 'app1comp1.txt', dest: 'c:\Temp\app1comp1.txt' }
+
