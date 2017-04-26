@@ -1,6 +1,6 @@
 ---
 - name: app1 playbook
-  hosts: '{{ target }}'
+  hosts: all
   roles:
     - { role: app1comp1 }
     - { role: app1comp2 }
