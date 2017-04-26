@@ -5,15 +5,11 @@
   
 - name: Copy app1comp1 to all the servers  
   hosts: all
-  tasks:
-  
   roles:
     - app1comp1
 
 - name: Copy app1comp2 to Win2012 Server  
   hosts: Win2012
-  tasks:
-    
   roles:
     - app1comp2
 
