@@ -1,2 +1,4 @@
 ---
-# tasks file for app1comp2
+# This uses the win_ping module to test connectivity to Windows hosts
+- name: Ping All windows servers 
+  win_ping:
